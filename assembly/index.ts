@@ -51,8 +51,8 @@ function transform_vigenere(to: string): void {
     }else if(to == "latex") {
         string = '[{"name": "raw", "data": ' + encrypted + '}]'
     }
-    let result = <JSON.Obj>(JSON.parse(string));
-    Console.log(result.stringify());
+    
+    Console.log(string);
 }
 
 function encrypt_vigenere(s: string, key: string): string {
